@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>AO3 Tag Download</title>
+        <link rel="stylesheet" href="styles.css">
+        <script async src="script.js"></script>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <div class="searchwindow">
+                <div class="searchbar">
+                    <div class="button enabled" id="searchbutton">
+                        <img class="svgicon" src="assets/search.svg">
+                    </div>
+                    <input type="text" name="search" class="searchinput" id="searchinput" placeholder="Tag">
+                </div>
+            </div>
+            <div class="logwindow">
+                <div class="header">
+                    <div class="currenttag">
+                        <label>Selected Tag:</label>
+                        <div id="tag">None</div>
+                    </div>
+                    <div class="formatsettings">
+                        <label>File Format:</label>
+                        <select name="fileformat" id="fileformats">
+                            <option value="pdf">.pdf</option>
+                            <option value="html">.html</option>
+                            <option value="epub">.epub</option>
+                        </select>
+                    </div>
+                    <div class="savedir">
+                        <div class="textbutton enabled" id="savedirbutton">
+                            <label>Save directory:</label>
+                            <div id="savedir">None</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="log">
+                    <section id="log">
+
+                    </section>
+                </div>
+                <div class="footer">
+                    <div class="startpage">
+                        <input type="text" name="page" class="pageinput" id="pageinput" placeholder="Starting page, default 1">
+                    </div>
+                    
+                    <div class="startdownload">
+                        <div id="download" class="textbutton enabled">
+                            Download.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
